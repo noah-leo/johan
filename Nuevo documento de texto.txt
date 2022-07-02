@@ -1,0 +1,29 @@
+Algoritmo Login
+ Definir session, intentos Como Entero
+ session <- 0
+ intentos <- 0
+ Mientras (intentos <3 y session==0) Hacer
+    Escribir "Ingrese el usuario"
+    leer ULogin
+    Escribir "Ingrese el contraseña
+    leer UPass
+    Si(Ulogin=="johnjara") Entonces
+       Si(UPass=="1478") Entonces
+         Escribir "el correcto"
+         session <- 1
+       Sino 
+          Escribir "Incorrecto"
+          intentos<-intentos+1
+          Limpiar Pantalla
+       FinSi
+    Sino
+       Escribir "vuelve a intentarlo, 2 veces"
+       intentos<-intentos+1
+       Limpiar Pantalla
+    FinSi
+
+ FinMientras 
+ Si(intentos==3) Entonces
+    Escribir " *Tarjeta retenida* o *Consulta al admin* "
+ FinSi
+Finlgoritmo
